@@ -8,7 +8,7 @@
 	<p><input id="submit" type="submit" name="submit"></p>
 </form>
 
-<form action="/posts/:id/delete" method="post">
+<form action="/posts/<%= @post.id %>/delete" method="post">
 	<input id="hidden" type="hidden" name="_method" value="delete">
 	<p><input type="submit" id="delete" name="delete" value="Delete"></p>
 </form>
